@@ -1,24 +1,39 @@
 What happens when you initialize a repository? Why do you need to do it?
 
-Git indicates the repository will be in version control, by creating the .git hidden directory.
-It is used to store the history of the repository.
+    Git indicates the repository will be in version control, by creating the .git hidden directory.
+    It is used to store the history of the repository.
 
 How is the staging area different from the working directory and the repository?
 What value do you think it offers?
 
-Staging area contains files to be commited (from git add)
-It allows to prepare a commit incrementally.
+    Staging area contains files to be commited (from git add)
+    It allows to prepare a commit incrementally.
 
 How can you use the staging area to make sure you have one commit per logical
 change?
 
+    All files in the staging area are listed in the commit prompt.
+    One can make sure that any of them refer to the same logical change
+     
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
+    Create several version of a same project, with different features.
+    Branches only contains variations of the master
+
 How do the diagrams help you visualize the branch structure?
+
+    The diagrams show the start of a branch from the master
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
+    Merging two branches result in one commit with two parents
+    A experimental feature is merged into a master branch for example
+
 What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
+
+    Automatic merging may cause conflict unidentified by Git
+    Doing merge manually allows the developer wheter the merge make sense
+	
